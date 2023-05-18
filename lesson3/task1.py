@@ -2,7 +2,12 @@
 # В исходном списке минимум 2 элемента.
 
 def modification(lst):
-    # Здесь пишем код
+    first_elem = lst[0]
+    last_elem = lst[-1]
+    del lst[0]
+    lst.insert(0, last_elem)
+    del lst[-1]
+    lst.append(first_elem)
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
